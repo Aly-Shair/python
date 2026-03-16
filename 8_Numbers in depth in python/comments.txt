@@ -1,0 +1,11 @@
+python has group of objs for Number type
+
+boolean are treated as Numbers in Python
+
+math.floor gives closest number before value
+math.trunk turns you towards zero
+
+to learn decimal: 
+	decimal context manager
+	
+sets are also numbers in python

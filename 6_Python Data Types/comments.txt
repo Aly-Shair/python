@@ -1,0 +1,5 @@
+Data Types Object: All data types in python are treated as objects
+
+string is also treated as list(array)
+
+python shell can do calculations directly

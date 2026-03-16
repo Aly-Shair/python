@@ -1,0 +1,4 @@
+mutable: can be change
+immutabe: can't be change
+
+NOTE: this change is related to refrence not to value change

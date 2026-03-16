@@ -1,0 +1,168 @@
+virtualenv:
+	pura pura computer dedeta ha jaha basic python installed ha
+	command:
+		pip install virtualenv
+	user giude:
+		https://virtualenv.pypa.io/en/latest/user_guide.html
+	creating virtualenv:
+		command:
+			virtualenv venv:
+			venv is just a name in this command you can use any name 
+			you can also use this:
+			python -m venv .venv
+	command to install all dependencies in requiremnt.txt:
+		command:
+			pip install -r requirements.txt
+
+			
+			
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> python -m venv .venv
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> python -m venv .venv
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> .\.venv\Scripts\activate
+.\.venv\Scripts\activate : File D:\Ali Shair\Python Chai or Code\25_Python Virtual environment 
+guide\.venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system. 
+For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.  
+At line:1 char:1
++ .\.venv\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> .\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1 : File D:\Ali Shair\Python Chai or Code\25_Python Virtual environment 
+guide\.venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system. 
+For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.  
+At line:1 char:1
++ .\.venv\Scripts\Activate.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> .\.venv\Scripts\activate
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> which python
+which : The term 'which' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is   
+correct and try again.
+At line:1 char:1
++ which python
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (which:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> which python3
+which : The term 'which' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is   
+correct and try again.
+At line:1 char:1
++ which python3
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (which:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+Package Version
+------- -------
+pip     24.3.1
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip install pymongo
+Collecting pymongo
+  Using cached pymongo-4.13.1-cp313-cp313-win_amd64.whl.metadata (22 kB)
+Collecting dnspython<3.0.0,>=1.16.0 (from pymongo)
+  Using cached dnspython-2.7.0-py3-none-any.whl.metadata (5.8 kB)
+Using cached pymongo-4.13.1-cp313-cp313-win_amd64.whl (954 kB)
+Using cached dnspython-2.7.0-py3-none-any.whl (313 kB)
+Installing collected packages: dnspython, pymongo
+Successfully installed dnspython-2.7.0 pymongo-4.13.1
+
+[notice] A new release of pip is available: 24.3.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+Using cached pymongo-4.13.1-cp313-cp313-win_amd64.whl (954 kB)
+Using cached dnspython-2.7.0-py3-none-any.whl (313 kB)
+Installing collected packages: dnspython, pymongo
+Successfully installed dnspython-2.7.0 pymongo-4.13.1
+
+[notice] A new release of pip is available: 24.3.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+Package   Version
+--------- -------
+dnspython 2.7.0
+pip       24.3.1
+pymongo   4.13.1
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list > requirement.txt
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip uninstall pymongo
+Found existing installation: pymongo 4.13.1
+Uninstalling pymongo-4.13.1:
+  Would remove:
+    d:\ali shair\python chai or code\25_python virtual environment guide\.venv\lib\site-packages\bson\*    d:\ali shair\python chai or code\25_python virtual environment guide\.venv\lib\site-packages\gridfs\*
+    d:\ali shair\python chai or code\25_python virtual environment guide\.venv\lib\site-packages\pymongo-4.13.1.dist-info\*
+    d:\ali shair\python chai or code\25_python virtual environment guide\.venv\lib\site-packages\pymongo\*
+Proceed (Y/n)? y
+  Successfully uninstalled pymongo-4.13.1
+  Successfully uninstalled pymongo-4.13.1
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+Package   Version
+--------- -------
+dnspython 2.7.0
+pip       24.3.1
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list > requirement.txt
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> python -m pip install Django
+Collecting Django
+  Downloading django-5.2.3-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref>=3.8.1 (from Django)
+  Downloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from Django)
+  Downloading sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from Django)
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading django-5.2.3-py3-none-any.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 522.6 kB/s eta 0:00:00
+Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, Django
+Successfully installed Django-5.2.3 asgiref-3.8.1 sqlparse-0.5.3 tzdata-2025.2
+
+[notice] A new release of pip is available: 24.3.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list
+Package   Version
+--------- -------
+asgiref   3.8.1
+Django    5.2.3
+dnspython 2.7.0
+pip       24.3.1
+sqlparse  0.5.3
+tzdata    2025.2
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> pip list > requirement.txt
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> dir
+
+
+    Directory: D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/12/2025   7:47 PM                .venv
+-a----         6/12/2025   7:44 PM            350 comments.txt
+-a----         6/12/2025   8:03 PM            286 requirement.txt
+
+
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide> cd .venv
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide\.venv> dir
+
+
+    Directory: D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide\.venv
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         6/12/2025   7:47 PM                Include
+d-----         6/12/2025   7:47 PM                Lib
+d-----         6/12/2025   8:02 PM                Scripts
+-a----         6/12/2025   7:47 PM             71 .gitignore
+-a----         6/12/2025   7:47 PM            284 pyvenv.cfg
+
+
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide\.venv> cd..
+(.venv) PS D:\Ali Shair\Python Chai or Code\25_Python Virtual environment guide>

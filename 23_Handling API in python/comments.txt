@@ -1,0 +1,9 @@
+https://pypi.org/project/requests/
+    it is a third party lib for api handling
+    command:
+        pip install requests
+
+A challenge:
+    hum bohat si lib use kartay han ik project me 
+    agar hamara koi code parhay to usey har file me dekhna parya ga ka konsi lib use ki hamara
+    isi ley hum ik file bana lein (like package.json in express or react to see dependencies)

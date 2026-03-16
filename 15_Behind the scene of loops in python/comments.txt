@@ -1,0 +1,8 @@
+iteration tools:
+	for
+	while
+	comprehension
+	
+iterable objects eg: list, file
+
+python ka andar ap kisi bhi iterable obj ko non iterable bana saktay ho and vice versa

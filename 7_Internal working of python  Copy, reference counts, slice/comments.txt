@@ -1,0 +1,21 @@
+python koi empty refrence nahi rakhta ha
+iska ik garbage collector ata ha jo deallocate kar deta ha
+
+jitna bhi data ka type ha wo memory ma rahta ha kabhi bhi variable ma nahi jata ha
+score = 10
+10 ko memory ma assign ho ga kay ap Number ho ya string ho score ko nahi ho ga
+
+python ka andar koi data type nahi ha ap variable ka andar kabhi datatype assign nahi kartay
+memory ka andar refrence ka datatype hota ha or wo datatype memory ka andar hi uska assign hota ha
+
+numbers or strings ka thora sa late garbage collect hota ha
+
+l1 = [1, 2, 3]
+l2 = [1, 2, 3] 
+in memory there are created two [1, 2, 3] cuz it is mutable
+
+n1 = 3
+n2 = 3
+but in case of numbers only 3 is created in memory cuz it is immutable
+
+python has dynamic ref type means we are not writing types for variable it is automatically assign to value in memory

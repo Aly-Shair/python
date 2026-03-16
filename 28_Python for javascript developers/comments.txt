@@ -1,0 +1,8 @@
+we are using uv for this
+	https://github.com/astral-sh/uv
+	command:
+		pip install uv
+
+pip install uv
+uv venv // for virtual enviroment 
+all things are same just use uv before pip

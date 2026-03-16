@@ -1,0 +1,8 @@
+pip or conda kabhi ik sath use nahi karnay
+
+when we install in conda it will automatically install the dependencies of dependencies
+but pip dont do that 
+
+conda info
+conda env list
+conda create --name py310 python=3.10
